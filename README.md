@@ -70,28 +70,6 @@ Or run this to see all validating parameters:
 python validate.py --help
 ```
 
-Запуск обучения локально (1) или на сервере на гпу 1 с предобученными весами (2):
-```shell script
-python main.py train
-python main.py train -d 1 --weights path/to/weights.h5 -s 
-```
-Тестирование модели на сервере на гпу 3 с предобученными весами (2):
-```shell script
-python main.py test -d 3 --weights path/to/weights.h5 -s 
-```
-Конвертация модели:
-```shell script
-python main.py convert --weights path/to/weights.h5 -s
-```
-Визуализация разметки и предиктов на цпу:
-```shell script
-python main.py predict --weights path/to/any/model.onnx --show --cpu
-```
-Измерение времени инференса и метрик на гпу:
-```shell script
-python main.py predict --weights path/to/any/model.pb
-```
-
 ## Current results
 
 ### custom_resnet18
